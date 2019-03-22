@@ -32,6 +32,17 @@ public class ServerWindow extends JFrame implements UpdateListener {
 		setSize(800,600);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		//adding tabs
+		JTabbedPane tabs = new JTabbedPane();
+
+		tabs.setTabPlacement(JTabbedPane.LEFT);
+		tabs.addTab("Postcodes", new JPanel());
+		
+
+		add(tabs);
+
+
 		setVisible(true);
 		
 		//Start timed updates
