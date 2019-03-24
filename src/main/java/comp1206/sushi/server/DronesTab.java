@@ -18,7 +18,7 @@ public class DronesTab extends JPanel
 
 
     JPanel buttonsPanel = new JPanel();
-    JButton testButton = new JButton("TEST");
+    JButton addButton = new JButton("Add Drone");
 
     JPanel contentPanel = new JPanel();
 
@@ -40,7 +40,7 @@ public class DronesTab extends JPanel
         updateDrones();
 
         buttonsPanel.setLayout(new FlowLayout());
-        buttonsPanel.add(testButton);
+        buttonsPanel.add(addButton);
 
 
     }

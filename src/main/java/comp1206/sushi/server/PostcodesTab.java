@@ -1,6 +1,7 @@
 package comp1206.sushi.server;
 
 import comp1206.sushi.common.Postcode;
+import comp1206.sushi.common.Supplier;
 
 import javax.swing.*;
 import java.awt.*;
@@ -77,16 +78,30 @@ public class PostcodesTab extends JPanel
         public void actionPerformed(ActionEvent e)
         {
             Postcode selectedValue = listModel.getElementAt(table.getSelectedIndex());
-            try
+            ArrayList<Supplier> supplierList = new ArrayList<>(server.getSuppliers());
+            boolean isUsed = false;
+            for(Supplier supplier: supplierList)
             {
-                server.removePostcode(selectedValue);
+                if(selectedValue == supplier.getPostcode())
+                {
+                    isUsed = true;
+                    break;
+                }
             }
-            catch (ServerInterface.UnableToDeleteException exception)
+            if(isUsed)
             {
-                System.out.println("Unable to delete. No such element");
+                System.out.println("Cannot delete. Postcode is being used by a supplier");
             }
+            else
+                {
 
-            updatePostCodes();
+                try {
+                    server.removePostcode(selectedValue);
+                } catch (ServerInterface.UnableToDeleteException exception) {
+                    System.out.println("Unable to delete. No such element");
+                }
+                updatePostCodes();
+            }
         }
     }
 
