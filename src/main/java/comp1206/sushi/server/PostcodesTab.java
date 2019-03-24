@@ -4,4 +4,8 @@ import javax.swing.*;
 
 public class PostcodesTab extends JPanel
 {
+    public PostcodesTab(ServerInterface server)
+    {
+        
+    }
 }
