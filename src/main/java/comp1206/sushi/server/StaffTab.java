@@ -1,28 +1,27 @@
 package comp1206.sushi.server;
 
-import comp1206.sushi.common.Drone;
+import comp1206.sushi.common.Staff;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class DronesTab extends JPanel
-{
+public class StaffTab extends JPanel{
+
     ServerInterface server;
 
     JPanel tablePanel = new JPanel();
     DefaultTableModel tableModel = new DefaultTableModel();
-    JTable dronesTable = new JTable(tableModel);
-    JScrollPane scrollPane = new JScrollPane(dronesTable);
+    JTable staffTable = new JTable(tableModel);
+    JScrollPane scrollPane = new JScrollPane(staffTable);
 
 
     JPanel buttonsPanel = new JPanel();
     JButton testButton = new JButton("TEST");
 
     JPanel contentPanel = new JPanel();
-
-    public DronesTab(ServerInterface server)
+    public StaffTab(ServerInterface server)
     {
         this.server = server;
         this.add(contentPanel);
@@ -31,30 +30,28 @@ public class DronesTab extends JPanel
         contentPanel.add(tablePanel, BorderLayout.CENTER);
         contentPanel.add(buttonsPanel, BorderLayout.SOUTH);
 
-        tableModel.addColumn("Drone");
-        tableModel.addColumn("Speed");
+        tableModel.addColumn("Name");
+        tableModel.addColumn("Fatigue");
         tableModel.addColumn("Status");
 
-        dronesTable.setPreferredSize(new Dimension(400,400));
+        staffTable.setPreferredSize(new Dimension(400,400));
         tablePanel.add(scrollPane);
-        updateDrones();
+        updateStaff();
 
         buttonsPanel.setLayout(new FlowLayout());
         buttonsPanel.add(testButton);
 
-
     }
 
-    private void updateDrones()
+    private void updateStaff()
     {
-        ArrayList<Drone> droneList = new ArrayList<Drone>(server.getDrones());
-
+        ArrayList<Staff> staffList = new ArrayList<Staff>(server.getStaff());
         tableModel.setRowCount(0);
-        for(Drone drone: droneList)
+
+        for(Staff staff: staffList)
         {
-            Object [] row = {drone.getName(),drone.getSpeed(),server.getDroneStatus(drone)};
+            Object [] row = {staff.getName(),staff.getFatigue(),server.getStaffStatus(staff)};
             tableModel.addRow(row);
         }
     }
-
 }

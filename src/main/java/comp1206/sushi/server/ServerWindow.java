@@ -39,7 +39,13 @@ public class ServerWindow extends JFrame implements UpdateListener {
 
 		tabs.setTabPlacement(JTabbedPane.LEFT);
 		tabs.addTab("Postcodes", new PostcodesTab(server));
-		tabs.addTab("Drones", new DronesTab());
+		tabs.addTab("Drones", new DronesTab(server));
+		tabs.addTab("Staff", new StaffTab(server));
+		tabs.addTab("Suppliers", new SuppliersTab(server));
+		tabs.addTab("Ingredients",new IngredientsTab(server));
+		tabs.addTab("Dishes", new DishesTab(server));
+		tabs.addTab("Orders", new OrdersTab(server));
+		tabs.addTab("Users", new UsersTab(server));
 
 		add(tabs);
 
