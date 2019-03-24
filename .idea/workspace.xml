@@ -4,7 +4,7 @@
     <list default="true" id="95fbabcc-24a3-4ccb-b61a-204412dc67a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DronesTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DronesTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/PostcodesTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/PostcodesTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/comp1206/sushi/server/PostcodesTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/comp1206/sushi/server/PostcodesTab.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,14 +16,14 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.4821509">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.52732795">
+        <splitter split-orientation="vertical" split-proportion="0.6766409">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DronesTab.java">
+                <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/PostcodesTab.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="373">
-                      <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+                    <state relative-caret-position="317">
+                      <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-end-line="24" />
                       <folding>
                         <element signature="imports" expanded="true" />
                       </folding>
@@ -38,8 +38,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/ServerWindow.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="160">
-                      <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+                    <state relative-caret-position="92">
+                      <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="33" selection-end-column="55" />
                     </state>
                   </provider>
                 </entry>
@@ -53,22 +53,10 @@
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/PostcodesTab.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-25">
-                      <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-                      <folding>
-                        <element signature="imports" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DronesTab.java">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-59">
-                      <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+                    <state relative-caret-position="293">
+                      <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
                       <folding>
                         <element signature="imports" expanded="true" />
                       </folding>
@@ -250,8 +238,8 @@
         <option value="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DishesTab.java" />
         <option value="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/UsersTab.java" />
         <option value="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/OrdersTab.java" />
-        <option value="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DronesTab.java" />
         <option value="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/PostcodesTab.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DronesTab.java" />
       </list>
     </option>
   </component>
@@ -342,7 +330,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553469659403" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553471152127" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -397,7 +385,7 @@
       <option name="presentableId" value="Default" />
       <updated>1553270227979</updated>
       <workItem from="1553270235383" duration="5660000" />
-      <workItem from="1553441318774" duration="24502000" />
+      <workItem from="1553441318774" duration="25485000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/MihaiNuica97/sushi&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/comp1206/sushi/server/PostcodesTab.java">
       <created>1553272528980</created>
@@ -448,14 +436,22 @@
       <option name="project" value="LOCAL" />
       <updated>1553468476994</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="-Postcodes now can't be deleted if there is a supplier using them">
+      <created>1553469979449</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553469979449</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30162000" />
+    <option name="totallyTimeSpent" value="31145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-668" y="-1448" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06399046" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -467,7 +463,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19251753" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19251753" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -477,7 +473,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32969603" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.22992985" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.22992985" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -536,7 +532,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/MihaiNuica97/sushi&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/comp1206/sushi/server/PostcodesTab.java" />
     <MESSAGE value="-Basic UI ready&#10;-Populated main fields" />
     <MESSAGE value="-Add function implemented on postcodes&#10;-Remove function implemented on postcodes" />
-    <option name="LAST_COMMIT_MESSAGE" value="-Add function implemented on postcodes&#10;-Remove function implemented on postcodes" />
+    <MESSAGE value="-Postcodes now can't be deleted if there is a supplier using them" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Postcodes now can't be deleted if there is a supplier using them" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/Launcher.java">
@@ -634,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/ServerWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/common/Order.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -666,16 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DronesTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/SuppliersTab.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -686,10 +666,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/ServerWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/PostcodesTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="65" column="5" lean-forward="true" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+        <state relative-caret-position="317">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DronesTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="77" column="12" lean-forward="true" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
