@@ -18,7 +18,8 @@ public class IngredientsTab extends JPanel
 
 
     JPanel buttonsPanel = new JPanel();
-    JButton testButton = new JButton("TEST");
+    JButton addButton = new JButton("Add new Ingredient");
+    JButton removeButton = new JButton("Remove Ingredient");
 
     JPanel contentPanel = new JPanel();
 
@@ -38,13 +39,17 @@ public class IngredientsTab extends JPanel
         tablePanel.add(scrollPane);
         updateIngredients();
 
+        addButton.addActionListener(new AddButtonListener(server,this));
+        removeButton.addActionListener(new RemoveButtonListener(server, this));
+
         buttonsPanel.setLayout(new FlowLayout());
-        buttonsPanel.add(testButton);
+        buttonsPanel.add(addButton);
+        buttonsPanel.add(removeButton);
 
     }
 
 
-    private void updateIngredients()
+    public void updateIngredients()
     {
         ArrayList<Ingredient> ingredientsList = new ArrayList<Ingredient>(server.getIngredients());
 
@@ -52,7 +57,7 @@ public class IngredientsTab extends JPanel
 
         for(Ingredient ingredient: ingredientsList)
         {
-            Object [] row = {ingredient.getName(),(server.getIngredientStockLevels().get(ingredient) + " " + ingredient.getUnit())};
+            Object [] row = {ingredient,(server.getIngredientStockLevels().get(ingredient) + " " + ingredient.getUnit())};
             tableModel.addRow(row);
         }
     }

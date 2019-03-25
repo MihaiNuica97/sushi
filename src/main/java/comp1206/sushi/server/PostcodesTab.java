@@ -23,7 +23,7 @@ public class PostcodesTab extends JPanel
     JButton removeButton = new JButton("Remove");
     JTextField inputField = new JTextField();
 
-    private void updatePostCodes()
+    public void updatePostCodes()
     {
         ArrayList<Postcode> postCodeList = new ArrayList<Postcode>(server.getPostcodes());
 

@@ -18,7 +18,6 @@ public class UsersTab extends JPanel
 
 
     JPanel buttonsPanel = new JPanel();
-    JButton testButton = new JButton("TEST");
 
     JPanel contentPanel = new JPanel();
 
@@ -29,7 +28,6 @@ public class UsersTab extends JPanel
 
         contentPanel.setLayout(new BorderLayout(5,5));
         contentPanel.add(tablePanel, BorderLayout.CENTER);
-        contentPanel.add(buttonsPanel, BorderLayout.SOUTH);
 
         tableModel.addColumn("User Name");
         tableModel.addColumn("Postcode");
@@ -38,13 +36,11 @@ public class UsersTab extends JPanel
         tablePanel.add(scrollPane);
         updateUsers();
 
-        buttonsPanel.setLayout(new FlowLayout());
-        buttonsPanel.add(testButton);
 
     }
 
 
-    private void updateUsers()
+    public void updateUsers()
     {
         ArrayList<User> userList = new ArrayList<>(server.getUsers());
 

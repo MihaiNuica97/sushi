@@ -19,7 +19,8 @@ public class DishesTab extends JPanel
 
 
     JPanel buttonsPanel = new JPanel();
-    JButton testButton = new JButton("TEST");
+    JButton addButton = new JButton("Add new Dish");
+    JButton removeButton = new JButton("Remove Dish");
 
     JPanel contentPanel = new JPanel();
 
@@ -40,13 +41,16 @@ public class DishesTab extends JPanel
         tablePanel.add(scrollPane);
         updateDishes();
 
+        addButton.addActionListener(new AddButtonListener(server, this));
+        removeButton.addActionListener(new RemoveButtonListener(server, this));
         buttonsPanel.setLayout(new FlowLayout());
-        buttonsPanel.add(testButton);
+        buttonsPanel.add(addButton);
+        buttonsPanel.add(removeButton);
 
     }
 
 
-    private void updateDishes()
+    public void updateDishes()
     {
         ArrayList<Dish> ingredientsList = new ArrayList<Dish>(server.getDishes());
 
@@ -54,7 +58,7 @@ public class DishesTab extends JPanel
 
         for(Dish dish: ingredientsList)
         {
-            Object [] row = {dish.getName(),dish.getDescription(),dish.getPrice()};
+            Object [] row = {dish,dish.getDescription(),dish.getPrice()};
             tableModel.addRow(row);
         }
     }

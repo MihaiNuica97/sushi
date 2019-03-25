@@ -17,8 +17,6 @@ public class OrdersTab extends JPanel
     JScrollPane scrollPane = new JScrollPane(ordersTable);
 
 
-    JPanel buttonsPanel = new JPanel();
-    JButton testButton = new JButton("TEST");
 
     JPanel contentPanel = new JPanel();
 
@@ -29,7 +27,6 @@ public class OrdersTab extends JPanel
 
         contentPanel.setLayout(new BorderLayout(5,5));
         contentPanel.add(tablePanel, BorderLayout.CENTER);
-        contentPanel.add(buttonsPanel, BorderLayout.SOUTH);
 
         tableModel.addColumn("Order");
         tableModel.addColumn("Status");
@@ -40,13 +37,12 @@ public class OrdersTab extends JPanel
         tablePanel.add(scrollPane);
         updateOrders();
 
-        buttonsPanel.setLayout(new FlowLayout());
-        buttonsPanel.add(testButton);
+
 
     }
 
 
-    private void updateOrders()
+    public void updateOrders()
     {
         ArrayList<Order> ordersList = new ArrayList<>(server.getOrders());
 

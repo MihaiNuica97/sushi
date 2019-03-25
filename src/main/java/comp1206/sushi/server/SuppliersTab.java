@@ -20,34 +20,39 @@ public class SuppliersTab extends JPanel
 
 
     JPanel buttonsPanel = new JPanel();
-    JButton testButton = new JButton("TEST");
+    JButton addButton = new JButton("Add new Supplier");
+    JButton removeButton = new JButton("Remove Supplier");
+
 
     JPanel contentPanel = new JPanel();
 
 
-    public SuppliersTab(ServerInterface server)
-    {
+    public SuppliersTab(ServerInterface server) {
         this.server = server;
 
         this.server = server;
         this.add(contentPanel);
 
-        contentPanel.setLayout(new BorderLayout(5,5));
+        contentPanel.setLayout(new BorderLayout(5, 5));
         contentPanel.add(tablePanel, BorderLayout.CENTER);
         contentPanel.add(buttonsPanel, BorderLayout.SOUTH);
 
         tableModel.addColumn("Supplier");
         tableModel.addColumn("Postcode");
 
-        suppliersTable.setPreferredSize(new Dimension(400,400));
+        suppliersTable.setPreferredSize(new Dimension(400, 400));
         tablePanel.add(scrollPane);
         updateSuppliers();
 
+
+        addButton.addActionListener(new AddButtonListener(server, this));
+        removeButton.addActionListener(new RemoveButtonListener(server, this));
         buttonsPanel.setLayout(new FlowLayout());
-        buttonsPanel.add(testButton);
+        buttonsPanel.add(addButton);
+        buttonsPanel.add(removeButton);
     }
 
-    private void updateSuppliers()
+    public void updateSuppliers()
     {
         ArrayList<Supplier> supplyList = new ArrayList<Supplier>(server.getSuppliers());
 
@@ -55,7 +60,7 @@ public class SuppliersTab extends JPanel
 
         for(Supplier supplier: supplyList)
         {
-            Object [] row = {supplier.getName(),supplier.getPostcode().getName()};
+            Object [] row = {supplier,supplier.getPostcode().getName()};
             tableModel.addRow(row);
         }
 

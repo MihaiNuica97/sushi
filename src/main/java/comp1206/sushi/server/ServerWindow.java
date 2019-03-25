@@ -5,6 +5,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 import comp1206.sushi.common.*;
 import comp1206.sushi.server.ServerInterface.UnableToDeleteException;
@@ -38,15 +40,71 @@ public class ServerWindow extends JFrame implements UpdateListener {
 
 
 		tabs.setTabPlacement(JTabbedPane.LEFT);
-		tabs.addTab("Postcodes", new PostcodesTab(server));
-		tabs.addTab("Drones", new DronesTab(server));
-		tabs.addTab("Staff", new StaffTab(server));
-		tabs.addTab("Suppliers", new SuppliersTab(server));
-		tabs.addTab("Ingredients",new IngredientsTab(server));
-		tabs.addTab("Dishes", new DishesTab(server));
-		tabs.addTab("Orders", new OrdersTab(server));
-		tabs.addTab("Users", new UsersTab(server));
+		PostcodesTab postcodesTab = new PostcodesTab(server);
+		tabs.addTab("Postcodes", postcodesTab);
 
+		DronesTab dronesTab = new DronesTab(server);
+		tabs.addTab("Drones", dronesTab);
+
+		StaffTab staffTab = new StaffTab(server);
+		tabs.addTab("Staff", staffTab);
+
+		SuppliersTab suppliersTab = new SuppliersTab(server);
+		tabs.addTab("Suppliers", suppliersTab);
+
+		IngredientsTab ingredientsTab = new IngredientsTab(server);
+		tabs.addTab("Ingredients",ingredientsTab);
+
+		DishesTab dishesTab = new DishesTab(server);
+		tabs.addTab("Dishes",	dishesTab);
+
+		OrdersTab ordersTab = new OrdersTab(server);
+		tabs.addTab("Orders", ordersTab);
+
+		UsersTab usersTab = new UsersTab(server);
+		tabs.addTab("Users", usersTab);
+
+		//event listener for change
+		tabs.addChangeListener(new ChangeListener() {
+			@Override
+			public void stateChanged(ChangeEvent e)
+			{
+				switch(e.getSource().getClass().toString())
+				{
+					case "class comp1206.sushi.server.PostcodesTab":
+						postcodesTab.updatePostCodes();
+						break;
+
+					case "class comp1206.sushi.server.DronesTab":
+						dronesTab.updateDrones();
+						break;
+
+					case "class comp1206.sushi.server.StaffTab":
+						staffTab.updateStaff();
+						break;
+
+					case "class comp1206.sushi.server.SuppliersTab":
+						suppliersTab.updateSuppliers();
+						break;
+
+					case "class comp1206.sushi.server.IngredientsTab":
+						ingredientsTab.updateIngredients();
+						break;
+
+					case "class comp1206.sushi.server.DishesTab":
+						dishesTab.updateDishes();
+						break;
+
+					case "class comp1206.sushi.server.OrdersTab":
+						ordersTab.updateOrders();
+						break;
+
+					case "class comp1206.sushi.server.UsersTab":
+						usersTab.updateUsers();
+						break;
+				}
+			}
+		});
 		add(tabs);
 
 

@@ -1,7 +1,6 @@
 package comp1206.sushi.server;
 
-import comp1206.sushi.common.Drone;
-import comp1206.sushi.common.Staff;
+import comp1206.sushi.common.*;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -59,6 +58,69 @@ public class RemoveButtonListener implements ActionListener
 
                 break;
             }
+
+            case"class comp1206.sushi.server.SuppliersTab":
+            {
+                SuppliersTab suppliersTab = (SuppliersTab) containingPanel;
+
+                if (suppliersTab.suppliersTable.getSelectedRow() != -1)
+                {
+                    Supplier selectedSupplier = (Supplier) suppliersTab.tableModel.getValueAt(suppliersTab.suppliersTable.getSelectedRow(), 0);
+                    try
+                    {
+                        server.removeSupplier(selectedSupplier);
+                    }
+                    catch (ServerInterface.UnableToDeleteException ex)
+                    {
+                        ex.printStackTrace();
+                    }
+                    suppliersTab.updateSuppliers();
+                }
+
+                break;
+            }
+            case"class comp1206.sushi.server.IngredientsTab":
+            {
+                IngredientsTab ingredientsTab = (IngredientsTab) containingPanel;
+
+                if (ingredientsTab.ingredientsTable.getSelectedRow() != -1)
+                {
+                    Ingredient selectedIngredient = (Ingredient) ingredientsTab.tableModel.getValueAt(ingredientsTab.ingredientsTable.getSelectedRow(), 0);
+                    try
+                    {
+                        server.removeIngredient(selectedIngredient);
+                    }
+                    catch (ServerInterface.UnableToDeleteException ex)
+                    {
+                        ex.printStackTrace();
+                    }
+                    ingredientsTab.updateIngredients();
+                }
+
+                break;
+            }
+
+            case"class comp1206.sushi.server.DishesTab":
+            {
+                DishesTab dishesTab = (DishesTab) containingPanel;
+
+                if (dishesTab.dishesTable.getSelectedRow() != -1)
+                {
+                    Dish selectedDish = (Dish) dishesTab.tableModel.getValueAt(dishesTab.dishesTable.getSelectedRow(), 0);
+                    try
+                    {
+                        server.removeDish(selectedDish);
+                    }
+                    catch (ServerInterface.UnableToDeleteException ex)
+                    {
+                        ex.printStackTrace();
+                    }
+                    dishesTab.updateDishes();
+                }
+
+                break;
+            }
+
         }
 
     }
