@@ -62,22 +62,37 @@ public class DronesTab extends JPanel
     }
 
 
-
+    //adds new drones
     class AddButtonListener implements ActionListener
     {
         public void actionPerformed(ActionEvent e)
         {
             JFrame addDroneFrame = new JFrame("Add New Drone");
+            JPanel dronePanel = new JPanel();
+            addDroneFrame.add(dronePanel);
             addDroneFrame.setVisible(true);
             addDroneFrame.setSize(500,300);
             addDroneFrame.setLocationRelativeTo(null);
-            addDroneFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-            addDroneFrame.add(new JLabel("Please specify drone speed:"));
+            JPanel inputPanel = new JPanel();
+
+            inputPanel.add(new JLabel("Please specify drone speed:"));
+
             JTextField inputField = new JTextField();
-//            addDroneFrame.add(inputField);
+            inputPanel.add(inputField);
+            inputField.setPreferredSize(new Dimension(50,20));
 
+            JButton confirmAddition = new JButton("Confirm");
+            confirmAddition.addActionListener(buttonPressed ->
+            {
+                server.addDrone(Integer.parseInt(inputField.getText()));
+                updateDrones();
+                addDroneFrame.setVisible(false);
+            });
+            dronePanel.add(inputPanel);
+            dronePanel.add(confirmAddition);
 
+            addDroneFrame.pack();
 
         }
     }
