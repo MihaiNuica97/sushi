@@ -41,8 +41,8 @@ public class DronesTab extends JPanel
         tablePanel.add(scrollPane);
         updateDrones();
 
-        addButton.addActionListener(new AddButtonListener());
-        removeBtn.addActionListener(new DeleteButtonListener());
+        addButton.addActionListener(new AddButtonListener(server, this));
+        removeBtn.addActionListener(new RemoveButtonListener(server, this));
         buttonsPanel.setLayout(new FlowLayout());
         buttonsPanel.add(addButton);
         buttonsPanel.add(removeBtn);
@@ -50,7 +50,7 @@ public class DronesTab extends JPanel
 
     }
 
-    private void updateDrones()
+    public void updateDrones()
     {
         ArrayList<Drone> droneList = new ArrayList<Drone>(server.getDrones());
 
@@ -62,60 +62,4 @@ public class DronesTab extends JPanel
         }
     }
 
-
-    //adds new drones
-    class AddButtonListener implements ActionListener
-    {
-        public void actionPerformed(ActionEvent e)
-        {
-            JFrame addDroneFrame = new JFrame("Add New Drone");
-            JPanel dronePanel = new JPanel();
-            addDroneFrame.add(dronePanel);
-            addDroneFrame.setVisible(true);
-            addDroneFrame.setSize(500,300);
-            addDroneFrame.setLocationRelativeTo(null);
-
-            JPanel inputPanel = new JPanel();
-
-            inputPanel.add(new JLabel("Please specify drone speed:"));
-
-            JTextField inputField = new JTextField();
-            inputPanel.add(inputField);
-            inputField.setPreferredSize(new Dimension(50,20));
-
-            JButton confirmAddition = new JButton("Confirm");
-            confirmAddition.addActionListener(buttonPressed ->
-            {
-                server.addDrone(Integer.parseInt(inputField.getText()));
-                updateDrones();
-                addDroneFrame.setVisible(false);
-            });
-            dronePanel.add(inputPanel);
-            dronePanel.add(confirmAddition);
-
-            addDroneFrame.pack();
-
-        }
-    }
-
-    class DeleteButtonListener implements ActionListener
-    {
-
-        public void actionPerformed(ActionEvent e)
-        {
-            if (dronesTable.getSelectedRow() != -1)
-            {
-                Drone selectedDrone = (Drone)tableModel.getValueAt(dronesTable.getSelectedRow(), 0);
-                try
-                {
-                    server.removeDrone(selectedDrone);
-                }
-                catch (ServerInterface.UnableToDeleteException ex)
-                {
-                    ex.printStackTrace();
-                }
-                updateDrones();
-            }
-        }
-    }
 }
