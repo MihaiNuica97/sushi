@@ -4,8 +4,6 @@
     <list default="true" id="95fbabcc-24a3-4ccb-b61a-204412dc67a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DishesTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DishesTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/comp1206/sushi/server/PostcodesTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/comp1206/sushi/server/PostcodesTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/comp1206/sushi/server/ServerWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/comp1206/sushi/server/ServerWindow.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +60,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DishesTab.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="318">
-                  <caret line="140" column="45" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
+                <state relative-caret-position="178">
+                  <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -88,8 +86,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/common/Dish.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="279">
-                  <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+                <state relative-caret-position="260">
+                  <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
                   <folding>
                     <element signature="e#975#976#0" expanded="true" />
                     <element signature="e#994#995#0" expanded="true" />
@@ -316,7 +314,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553501339649" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553505640116" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -372,7 +370,7 @@
       <updated>1553270227979</updated>
       <workItem from="1553270235383" duration="5660000" />
       <workItem from="1553441318774" duration="30515000" />
-      <workItem from="1553479257878" duration="21818000" />
+      <workItem from="1553479257878" duration="23722000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/MihaiNuica97/sushi&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/comp1206/sushi/server/PostcodesTab.java">
       <created>1553272528980</created>
@@ -465,27 +463,34 @@
       <option name="project" value="LOCAL" />
       <updated>1553492096782</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="-Recipes now displaying&#10;-Edit recipes partially working">
+      <created>1553501396810</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1553501396810</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57993000" />
+    <option name="totallyTimeSpent" value="59897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4959514" visible="true" weight="0.123298034" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.496" visible="true" weight="0.123298034" />
+      <window_info id="Structure" order="1" sideWeight="0.504" side_tool="true" visible="true" weight="0.123298034" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5040486" side_tool="true" visible="true" weight="0.123298034" />
+      <window_info id="Favorites" order="6" sideWeight="0.5040486" side_tool="true" weight="0.123298034" />
       <window_info id="Learn" order="7" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49621785" visible="true" weight="0.19148937" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49621785" visible="true" weight="0.1816694" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3998441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -495,7 +500,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50378215" side_tool="true" weight="0.19148937" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4969743" weight="0.22422259" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49848714" weight="0.19148937" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.49848714" weight="0.36497545" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -560,7 +565,8 @@
     <MESSAGE value="-Remove drone function complete" />
     <MESSAGE value="-All Add and Remove code has been merged into 2 classes: AddButtonListener and RemoveButtonListener&#10;-From now on all adding/removing will be done from here" />
     <MESSAGE value="-All add and remove functions now implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="-All add and remove functions now implemented" />
+    <MESSAGE value="-Recipes now displaying&#10;-Edit recipes partially working" />
+    <option name="LAST_COMMIT_MESSAGE" value="-Recipes now displaying&#10;-Edit recipes partially working" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/Launcher.java">
@@ -743,8 +749,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/common/Dish.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        <state relative-caret-position="260">
+          <caret line="54" column="6" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="6" />
           <folding>
             <element signature="e#975#976#0" expanded="true" />
             <element signature="e#994#995#0" expanded="true" />
@@ -756,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/comp1206/sushi/server/DishesTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="140" column="45" selection-start-line="140" selection-start-column="45" selection-end-line="140" selection-end-column="45" />
+        <state relative-caret-position="178">
+          <caret line="134" column="20" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
