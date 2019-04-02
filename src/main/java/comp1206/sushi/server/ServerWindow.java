@@ -107,6 +107,7 @@ public class ServerWindow extends JFrame implements UpdateListener {
 		});
 		add(tabs);
 
+		//ur mom ghey
 
 		setVisible(true);
 		

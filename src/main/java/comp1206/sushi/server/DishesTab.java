@@ -139,7 +139,6 @@ public class DishesTab extends JPanel
                     for(int i = 0; i < recipeModel.getRowCount(); i++)
                     {
                         String qString = recipeModel.getValueAt(i,1).toString().split(" ")[0];
-
                         recipe.put((Ingredient)recipeModel.getValueAt(i,0),Integer.parseInt(qString));
                     }
                     server.setRecipe((Dish)dishes.getSelectedItem(),recipe);

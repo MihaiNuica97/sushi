@@ -22,7 +22,7 @@ public class AddButtonListener implements ActionListener
     public void actionPerformed(ActionEvent e)
     {
 
-        System.out.println(containingPanel.getClass().toString());
+//        System.out.println(containingPanel.getClass().toString());
         switch(containingPanel.getClass().toString()) {
             case "class comp1206.sushi.server.DronesTab": {
                 DronesTab dronesPanel = (DronesTab) containingPanel;
